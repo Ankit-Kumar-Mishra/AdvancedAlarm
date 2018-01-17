@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="563dp"
+    android:background="#009900"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.09"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Set Time"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorLink="@color/colorAccent"
+        tools:gravity="center"
+        tools:textAlignment="center"
+        tools:textColorLink="@color/colorPrimary" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="197dp"
+        android:layout_weight="0.65"
+        android:background="@drawable/sunrise"
+        android:timePickerMode="spinner" />
+
+    <Button
+        android:id="@+id/proceedButton"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_weight="0.06"
+        android:background="?android:attr/colorButtonNormal"
+        android:onClick="onProceedClick"
+        android:text="proceed"
+        android:textColor="@android:color/black"
+        android:textSize="25sp" />
+
+</LinearLayout>
